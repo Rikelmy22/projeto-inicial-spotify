@@ -1,0 +1,14 @@
+/*
+* 
+* @author Jamilton Damasceno
+*/
+
+/* Layout
+------------------------*/
+
+body {
+    background-image: url(../imagens/capa.png),
+                      url(../imagens/ruido.png),
+                      linear-gradient(left to right, #);
+        
+}
