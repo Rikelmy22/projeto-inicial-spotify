@@ -6,9 +6,126 @@
 /* Layout
 ------------------------*/
 
+body,html, #home {
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 body {
+    height: 100vh;
     background-image: url(../imagens/capa.png),
                       url(../imagens/ruido.png),
-                      linear-gradient(left to right, #);
+                      linear-gradient(50deg, #ff4169,#7c26f8);
+                      background-attachment: fixed;
         
+}
+
+/* Barra de navegação
+------------------------*/
+
+nav.transparente {
+    background: #00000034;
+}
+
+.navbar-expand-md .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-expand-md .navbar-nav .nav-link:hover {
+    color: #9bf0e1;
+}
+
+.divisor {
+    width: 1px;
+    background: rgb(255, 254, 254);
+    margin: 12px 15px;
+}
+
+.navbar-dark .navbar-toggler {
+    color: rgba(255, 255, 255, .5);
+    border-color: rgba(194, 244, 235, 0.551);
+}
+
+/* Capa
+--------------------- */
+
+.capa {
+    text-align: center;
+}
+
+ /* Tipografia
+ --------------------*/
+
+.capa h1 {
+    color: #fff;
+    font-weight: 900;
+    letter-spacing: -0.05em;
+    margin-bottom: 50px;
+}
+
+.btn-custom {
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 500px;
+    transition: 0.4s;
+    padding: 10px 20px;
+}
+
+.btn-roxo {
+    background-color: #7c25f8;
+    color: #000;
+}
+
+.btn-roxo:hover {
+    background: #6307e3aa;
+    color: #000;
+}
+
+
+.btn-branco {
+   border: 1px solid white;
+    color: #ffffff;
+}
+
+.btn-branco:hover {
+    background: #ffffff7c;
+    color: #000;
+}
+
+
+/* Media queries
+----------------------*/
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    .capa h1 {
+       font-size: 2em;
+    }
+ }
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .capa h1 {
+        font-size: 3em;
+    }
+ }
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .capa h1 {
+        font-size: 4em;
+    }
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .capa h1 {
+        font-size: 5em;
+    }
+ }
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    .capa h1 {
+        font-size: 6em;
+    }
 }
