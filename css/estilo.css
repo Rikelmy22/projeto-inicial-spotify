@@ -1,14 +1,12 @@
-/*
-* 
-* @author Jamilton Damasceno
-*/
+@charset "UTF-8";
 
 /* Layout
-------------------------*/
+___________________________*/
 
 body,html, #home {
     height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
 }
 
 body {
@@ -21,7 +19,7 @@ body {
 }
 
 /* Barra de navegação
-------------------------*/
+__________________________*/
 
 nav.transparente {
     background: #00000034;
@@ -47,14 +45,51 @@ nav.transparente {
 }
 
 /* Capa
---------------------- */
+_______________________*/
 
 .capa {
     text-align: center;
 }
 
+/* Estrutura Seção conteúdo
+_________________________ */
+
+.caixa {
+    padding: 25px 0px;
+}
+
+#servicos h2, h3 {
+    color: #7c25f8;
+}
+
+#recursos h2 {
+    color: #fff;
+}
+
+#recursos h3 {
+    color: #9bf0e1;
+}
+
+.albuns {
+    padding-top: 10px;
+}
+
+.img-fluid {
+    margin-bottom: 20px;
+}
+
+/* Estrutura Seção conteúdo
+___________________________ */
+
+.rotate {
+    padding-left: 80px;
+    -ms-transform: rotate(30deg);/* IE 9 */
+    -webkit-transform: rotate(30deg);/* Chrome, Safari, Opera */
+    transform: rotate(30deg);
+}
+
  /* Tipografia
- --------------------*/
+ _____________________*/
 
 .capa h1 {
     color: #fff;
@@ -63,11 +98,33 @@ nav.transparente {
     margin-bottom: 50px;
 }
 
+#servicos p {
+    text-indent: 15px;
+}
+
+#recursos p {
+    text-indent: 15px;
+}
+
+
+h2 {
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+h3 {
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
 .btn-custom {
     color: #fff;
     text-transform: uppercase;
     border-radius: 500px;
     transition: 0.4s;
+    transition-timing-function: ease;
     padding: 10px 20px;
 }
 
@@ -94,11 +151,16 @@ nav.transparente {
 
 
 /* Media queries
-----------------------*/
+____________________*/
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
     .capa h1 {
-       font-size: 2em;
+       font-size: 2.5em;
+    }
+
+    .btn-custom {
+        font-size: small;
+        margin: 10px 15px;
     }
  }
 
@@ -107,12 +169,33 @@ nav.transparente {
     .capa h1 {
         font-size: 3em;
     }
+
+    .btn-roxo {
+        width: small;
+        font-size: small;
+    }
+
+    .btn-branco {
+        width: small;
+        font-size: small;
+    }
  }
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px) { 
     .capa h1 {
         font-size: 4em;
+    }
+
+    
+    .btn-roxo {
+        width: medium;
+        font-size: medium;
+    }
+
+    .btn-branco {
+        width: medium;
+        font-size: medium;
     }
 }
 
@@ -121,6 +204,16 @@ nav.transparente {
     .capa h1 {
         font-size: 5em;
     }
+    
+    .btn-roxo {
+        width: large;
+        font-size: large;
+    }
+
+    .btn-branco {
+        width: large;
+        font-size: large;
+    }
  }
 
 /* Extra large devices (large desktops, 1200px and up)*/
@@ -128,4 +221,15 @@ nav.transparente {
     .capa h1 {
         font-size: 6em;
     }
+
+    .btn-roxo {
+        width: x-large;
+        font-size: x-large;
+    }
+
+    .btn-branco {
+        width: x-large;
+        font-size: x-large;
+    }
 }
+
