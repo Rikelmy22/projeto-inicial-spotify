@@ -49,8 +49,7 @@
                   <li class="nav-item">
                     <a href="#" class="nav-link">Baixar</a>
                   </li>
-                  <li class="nav-item divisor">
-                  </li>
+                  <li class="nav-item divisor"></li><!-- divisor -->
                   <li class="nav-item">
                     <a href="#" class="nav-link">Inscrever-se</a>
                   </li>
@@ -63,15 +62,37 @@
        </nav><!-- fim navegação -->
     </header><!-- fim cabeçalho -->
     <main><!--- inicio principal -->
+      
       <section id="home" class="d-flex"><!--- inicio seção home -->
         <div class="container align-self-center">
-          <div class="row">
+          <div class="row"><!--inicio row-->
             <div class="col-md-12 capa">
-              <h1 class="display-1">Música para todos</h1>
-              <a href="#" class="btn btn-roxo btn-lg btn-custom">Aproveite spotify free</a>
-              <a href="#" class="btn btn-branco btn-lg btn-custom">Obter spotify premium</a>
+              <div id="carousel-controls" class="carousel slide" data-ride="carousel"><!-- inicio carousel -->
+                <div class="carousel-inner"><!-- inicio inner -->
+                  <div class="carousel-item active">
+                    <h1 class="display-1">Música para todos</h1>
+                    <a href="#" class="btn btn-lg btn-custom btn-roxo">Aproveite Spotify free</a>
+                    <a href="#" class="btn btn-lg btn-custom btn-branco">Obter Spotify premium</a>
+                  </div>
+                  <div class="carousel-item">
+                    <h1 class="display-1">As melhores rádios</h1>
+                    <a href="#" class="btn btn-lg btn-custom btn-branco">
+                      <i class="fas fa-music mr-1"></i>Ouça agora</a>
+                  </div>
+                </div><!-- fim inner -->
+                <!-- controles-carousel -->
+
+                <a href="#carousel-controls" class="carousel-control-prev" data-slide="prev">
+                  <i class="fas fa-angle-left fa-3x"></i>
+                </a>
+                <a href="#carousel-controls" class="carousel-control-next" data-slide="next">
+                  <i class="fas fa-angle-right fa-3x"></i>
+                </a>
+
+                <!-- fim crontroles carousel -->
+              </div><!-- fim carousel -->
             </div>
-          </div>
+          </div><!-- fim row -->
         </div>
       </section><!-- fim seção home -->
       <section id="servicos" class="caixa bg-light"><!-- inicio seção conteúdo -->
@@ -89,7 +110,7 @@
                 </div>
               </div>
             </div>
-            <article class="col-md-6">
+            <article class="col-md-6 pl-md-2 pl-sm-none ">
             <h2>O que o Spotify tem?</h2>
 
             <h3>Músicas</h3>
@@ -136,6 +157,79 @@
          </div><!-- fim container -->
       </section><!-- fim seção final -->
     </main><!--- fim principal -->
+    <footer class="rodape"><!--Inicio rodapé-->
+      <div class="container">
+        <div class="row space-between no-gutters">
+          <div class="col-md-2">
+            <img src="imagens/spotify.svg" alt="logo" width="120">
+          </div>
+          <div class="col-md-2">
+            <h4>Company</h4>
+            <ul class="navbar-nav">
+              <li>
+                <a href="#">Sobre</a>
+              </li>
+              <li>
+                <a href="#">Empregos</a>
+              </li>
+              <li>
+                <a href="#">Imprensa</a>
+              </li>
+              <li>
+                <a href="#">Novidades</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h4>Comunidades</h4>
+            <ul class="navbar-nav">
+              <li>
+                <a href="#">Aristas</a>
+              </li>
+              <li>
+                <a href="#">Desenvolvedores</a>
+              </li>
+              <li>
+                <a href="#">Marcas</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h4>Links úteis</h4>
+            <ul class="navbar-nav">
+              <li>
+                <a href="#">Suporte</a>
+              </li>
+              <li>
+                <a href="#">Presentes</a>
+              </li>
+              <li>
+                <a href="#">Player da web</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 d-flex justify-content-center">
+            <ul class="navbar-nav navbar-expand-sm">
+              <li class="nav-item mr-2">
+                <a href="#" class="nav-link">
+                  <img src="imagens/facebook.png" width="40">
+                </a>
+              </li>
+              <li class="nav-item mr-2">
+                <a href="#" class="nav-link">
+                  <img src="imagens/instagram.png" width="40">
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <img src="imagens/twitter.png" width="40">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer><!-- fim rodapé -->
 
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
